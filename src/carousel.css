@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ello{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}   
+.slide {
+    background-color: aqua;
+
+}
