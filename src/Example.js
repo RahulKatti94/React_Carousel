@@ -13,7 +13,7 @@ import Modal from 'react-bootstrap/Modal';
       <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
-
+      <p>paragrapg tag</p>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
