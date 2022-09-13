@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Practice from './Practice';
@@ -27,7 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import CaroselVideo from './CaroselVideo'
 // import Short from './Short';
 // import Newfile from './Newfile';
-import SimpleSlider from './SimpleSlider';
+// import SimpleSlider from './SimpleSlider'; 
 // import Responsive from './Responsive';
 // import Navigation from './Navigation';
 // import Layout from './Layout';
@@ -35,14 +35,24 @@ import SimpleSlider from './SimpleSlider';
 // import Modal from 'react-bootstrap/Modal';
 // import Example from './Example';
 // import BootModel from './BootModel'
+// import ClickModel from './ClickModel';
+// import ClassToFunction from './ClassToFunction';
+import React from 'react';
+import CustomArrows from './SampleNextArrow';
+// import SsimpleSlider from './SsimpleSlider';
+// import AppendDots from './AppendDots';
+// import FullModel from './FullModel';
+// import FinalModal from './FinalModal';
+// import SampleNextArrow from './SampleNextArrow';
 
 
 function App() {
   return (
+
     <div className="App">
 
 
-      {/* <Practice /> */}
+      {/* <Practice /> */}  
       {/* <Routes>
            <Route path = '/' index element= {<Navbar />}/>
            <Route path='/hhome' element = {<Hhome />} />
@@ -83,15 +93,19 @@ function App() {
       {/* <Short /> */}
 
       {/* <Newfile /> */}
-      <SimpleSlider />
+      {/* <SimpleSlider /> */}
       {/* <Responsive /> */}
-    {/* <Example />
-    <BootModel /><br />
-    <Example /><br />
-    <Example /><br />
-    <Example /><br />
-    <Example /><br />
-    <Example /> */}
+      {/* <Example /> */}
+      {/* <BootModel /> */}
+      {/* <Example /><br /> */}
+      {/* <ClickModel /> */}
+      {/* <ClassToFunction /> */}
+      {/* <FullModel/> */}
+      {/* <FinalModal /> */}
+      {/* <AppendDots /> */}
+      {/* <SampleNextArrow /> */}
+      <CustomArrows />
+      {/* <SsimpleSlider /> */}
     </div>
 
   );

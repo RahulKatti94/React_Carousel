@@ -1,4 +1,4 @@
-import { Card, CardGroup } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import Carousel from 'react-bootstrap/Carousel'
 import car from '../src/videos/car.mp4'
 import girl from '../src/videos/girl.mp4'
@@ -13,7 +13,7 @@ export default function Short() {
 
 <div className="row no-wrap">
 
-            <Carousel>
+            <Carousel>s
 
 
                 <Carousel.Item>

@@ -2,8 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Container } from 'react-bootstrap';
-import Example from './Example';
+// import Example from './Example';
 
 export default function BootModel(props) {
     return (
@@ -50,15 +49,8 @@ export default function BootModel(props) {
             onHide={() => setModalShow(false)}
 
           />
-          <Container>
-        <h1>    
-            Hello world 
-        </h1>
-    </Container>
-
-    <button onClick={Example()}>Click me </button>
         </>
       );
     }
     
-    render(<App />);
+     render(<App />);

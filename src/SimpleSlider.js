@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Card, } from "react-bootstrap";
 import Slider from "react-slick";
 import video from '../src/videos/video.mp4'
 import car from '../src/videos/car.mp4'
@@ -9,8 +9,6 @@ import main from '../src/videos/main.mp4'
 import rabit from '../src/videos/rabit.mp4'
 import toy from '../src/videos/toy.mp4'
 import { Image } from 'react-bootstrap';
-
-
 
 export default class Responsive extends Component {
   render() {
@@ -49,123 +47,248 @@ export default class Responsive extends Component {
       ]
     };
     return (
-      <div>
-        <h2> Responsive </h2>
+      <div><br /><br /><br /><br />
+        {/* <h1 className="text-center"> Responsive </h1> */}
         <Container>
           <Slider className="slide" {...settings}>
 
             <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={video}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-              <Image src="/images/car.jpg" />
-              <h5>  Mini Hummer</h5>
-              <b> ₹  549</b>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+
+                  <video
+                    className="slider-video vidio"
+                    src={video}
+                    loop
+                    autoPlay
+                    mute
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                    <i className="fa fa-eye  f-icon" aria-hidden="true"></i>
+                    <span className="d-inline-flex">678</span>
+                        <span className="timer"> 00:25 </span>
+                        </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+                    <Image className="imagesmall" src="/images/car.jpg" />
+
+                    <h5 className="text-center"> <b>Mini Hummer</b></h5>
+                    <p className="text-center"> <b>₹  549</b></p>
+
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+
+
+
+            <div>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+                  <video
+                    className="slider-video vidio"
+                    src={main}
+                    loop
+                    autoPlay
+                    muted
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                    <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                    <span className="d-inline-flex">223</span>
+                    <span className="timer"> 00:14 </span>
+                    
+                  </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+                    <Image className="imagesmall" src="/images/woden.jpg" />
+                    <h5 className="text-center"><b> wooden Christmas Toys</b></h5>
+                    <p className="text-center"> <b> ₹ 99    ₹1̶9̶9̶ </b></p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+
+
+            <div>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+                  <video
+                    className="slider-video vidio"
+                    src={car}
+                    loop
+                    autoPlay
+                    muted
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                  <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                  <span className="d-inline-flex">439</span>
+                  <span className="timer"> 00:08 </span>
+                  </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+                    <Image className="imagesmall" src="/images/redcar.jpg" />
+                    <h5 className="text-center"> <b>Mini BMW Sedan</b></h5>
+                    <p className="text-center">  <b> ₹  599</b></p>
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
             <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={main}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-              <Image src="/images/woden.jpg" />
-              <h5> wooden Christmas Toys</h5>
-              <b> ₹ 99    ₹1̶9̶9̶ </b>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+                  <video
+                    className="slider-video vidio"
+                    src={toy}
+                    loop
+                    autoPlay
+                    muted
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                  <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                  <span className="d-inline-flex">231</span>
+                  <span className="timer"> 00:12 </span>
+                  </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+                    <Image className="imagesmall" src="/images/Rrabbit.jpg" />
+                    <h5 className="text-center"><b>Little Rabbit</b></h5>
+                    <p className="text-center"> <b> ₹  599</b></p>
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
             <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={car}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-              <Image src="/images/redcar.jpg" />
-              <h5> Mini BMW Sedan</h5>
-              <b> ₹  599</b>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+                  <video
+                    className="slider-video vidio"
+                    src={kid}
+                    loop
+                    autoPlay
+                    muted
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                  <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                  <span className="d-inline-flex">590</span>
+                  <span className="timer"> 00:18 </span>
+                  </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+
+                    <Image className="imagesmall" src="/images/doll.jpg" />
+                    <h5 className="text-center"><b>Doll House</b></h5>
+                    <p className="text-center"> <b > ₹  899</b></p>
+                  </div>
+                </Card.Body>
+              </Card>
+
             </div>
             <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={toy}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-              <Image src="/images/Rrabbit.jpg" />
-              <h5>Little Rabbit</h5>
-              <b> ₹  599</b>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+                  <video
+                    className="slider-video vidio"
+                    src={rabit}
+                    loop
+                    autoPlay
+                    muted
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                  <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                  <span className="d-inline-flex">121</span>
+                  <span className="timer"> 00:07 </span>
+                  </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+
+                    <Image className="imagesmall" src="/images/bunny.jpg" />
+                    <h5 className="text-center"><b>Cute Bunny</b></h5>
+                    <p className="text-center">  <b> ₹  699</b></p>
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
             <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={kid}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-              <Image src="/images/doll.jpg" />
-              <h5>Doll House</h5>
-              <b> ₹  899</b>
-            </div>
-            <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={rabit}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-                <Image src="/images/bunny.jpg" />
-              <h5>Cute Bunny</h5>
-              <b> ₹  699</b>
-            </div>
-            <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
-                src={girl}
-                loop
-                autoPlay
-                muted
-                loading="lazy"
-                style={{ width: "20rem" }}></video>
-                <Image src="/images/teddy.jpg" />
-              <h5>Brown Teddy</h5>
-              <b> ₹  999</b>
+              <Card
+                style={{ width: '18rem' }}
+              >
+                <Card.Body className="p-0">
+                  <video
+                    className="slider-video vidio"
+                    src={girl}
+                    loop
+                    autoPlay
+                    muted
+                    loading="lazy"
+                    style={{ width: "18rem" }}></video>
+                  {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
+                  <div className="view d-inline-flex">
+                  <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                  <span className="d-inline-flex">236</span>
+                  <span className="timer"> 00:21 </span>
+                  </div>
+                </Card.Body>
+                <Card.Body>
+                  <div className="vidio">
+
+                    <Image className="imagesmall" src="/images/teddy.jpg" />
+                    <h5 className="text-center"> <b>Brown Teddy</b></h5>
+                    <p className="text-center"> <b> ₹  999</b></p>
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
             {/* <div>
-              <Image src="/images/view.jpeg" /><span>100</span>
-              <video
-                className="slider-video"
+            <video
+                className="slider-video vidio"
                 src={video}
                 loop
                 autoPlay
                 muted
                 loading="lazy"
                 style={{ width: "20rem" }}></video>
+              // <Image className="d-inline-flex" src = "/images/eye.png" />
+              <i className="fa fa-eye f-icon" aria-hidden="true"></i>
+                <span className="d-inline-flex">120</span>
+                <span className="timer"> 00:18 </span>
+              
+                <Image className="imagesmall" src="/images/car.jpg" /> 
+              <h5 className="text-center"> <b> Mini Hummer</b>s</h5>
+              <b> ₹  549</b>
             </div> */}
           </Slider>
         </Container>
-      </div>
-    );
+      </div >
+    );  
   }
 }
