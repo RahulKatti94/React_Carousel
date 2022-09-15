@@ -1,15 +1,16 @@
-*{
-    margin: 0;  
-    padding: 0  ;
-    /* background-color: lightgrey;   */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
     font-family: halvetica calibri, futura;
+    caret-color: #ff0000
 }
 
-.view{
-    
-    color: white; 
+.view {
+
+    color: white;
     height: 20px;
-    width: 4rem; 
+    width: 4rem;
     font-size: 14px;
     background-color: #973443;
     position: absolute;
@@ -17,78 +18,62 @@
     left: 1rem;
     align-items: center;
     padding: 4px;
-   display: flex;
-   justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
-.imagesmall{
+
+.imagesmall {
     height: 4rem;
-    width: 4rem; 
+    width: 4rem;
     position: absolute;
     bottom: 9rem;
     left: 5.8rem;
-    
+
 }
-.f-icon{
+
+.f-icon {
     font-size: 15px;
     margin-right: 5px;
 
 }
-.vidio{
+
+.vidio {
     position: relative;
 }
-.timer{
+
+.timer {
     position: absolute;
     color: white;
     background-color: black;
     opacity: 0.4;
     left: 13rem;
     height: 20px;
-    width: 2.8rem; 
+    width: 2.8rem;
     font-size: 14px;
     text-align: center;
 }
-.font{
+
+.font {
     font-size: 24px;
 }
 
-.imagebig{
+.imagebig {
     height: 4rem;
-    width: 4rem; 
+    width: 4rem;
     position: absolute;
     bottom: 8.5rem;
     left: 5.8rem;
-}   
-    /* .click{
-        margin : 0;
-        padding: 0;
-        display: inline-block;
-        border-top: 10px solid transparent;
-        border-left: 15px solid #ffff;
-        border-bottom: 10px solid transparent;
-        margin-top: 14px;
-        margin-left: 5px;
-        position: relative;
-        text-align: center;
-    } */
+}
 
-.swiper-slide .SSV-play-btn {
-    position: absolute;
-    display: inline-block;
-    background: rgb(0 0 0 / 60%);
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
-    margin-bottom: 100px;
-    box-sizing: border-box;
-    text-align: center;
-}   
+
+
 .swiper-slide {
     position: relative;
     text-align: center;
     font-size: 18px;
 }
-.swiper-slide .SSV-play-btn label {
+
+/* .swiper-slide .SSV-play-btn label {
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -97,63 +82,107 @@
     border-bottom: 10px solid transparent;
     margin-top: 14px;
     margin-left: 5px;
-}
-.width{
+} */
+
+.width {
     width: 15rem;
-    height:15rem;
+    height: 15rem;
 }
-.button-border{
+
+.button-border {
     background-color: black;
+    opacity: 0.7;
     width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  text-shadow: 2px 2px #ff0000;
-  /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px #ff0000;
+
+    /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
 }
-.button-border:hover{
+
+.button-border ::before {
+    background-color: transparent;
+    outline: none;
+}
+
+.button-border ::after {
+    background-color: transparent;
+    outline: none;
+    z-index: -1;
+}
+
+.ello {
+
+
+    margin: 50px !important;
+    float: left !important;
+}
+
+
+.closedbutton {
+
+    font-size: 1rem;
+}
+
+.modalimage {
+    height: 4rem;
+    width: 4rem;
+        /* position: absolute;
+        align-items: center;
+        bottom: 5rem;
+        left: 69rem; */
+}
+.card-header{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+} 
+.modalvideo {
+    position: relative;
+}
+
+.image-border {
+    border: 2px solid #684bc4;
+}
+
+.modal-class {
     background-color: black;
-    text-decoration: none;
-    /* text-shadow: 2px 2px #ff0000; */
-}   
-.ello{
-        margin: 50px !important;
-        float: left !important  ;
+    padding: 0 !important;
 }
 
-.modelview{
-    /* display: flex;
-    align-items: center !important;
-    text-align: center; */
-    float: left;
+.cross-button {
+    height: auto;
+    border: solid black ;
+        
+} 
+.txt{
+    color: #fff!important;
+    margin: 0!important;
+    height: 30px;
+    line-height: 30px;
+    width: calc(100% - 155px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 18px;
 }
-.slick-next {
-    right: 0px;
+
+.modal-background-color {
+    /* background-color: black; */
+    /* margin-top: -5rem; */    
+    /* margin-right: 12rem; */
+    /* height: 15rem; */
+    width: 25rem !important;
+    height: 100% !important;
+    /* border: solid black !important; */
+    position: relative;
+    margin: auto;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

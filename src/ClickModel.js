@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import React from 'react';
 import { render } from '@testing-library/react';
 import video from '../src/videos/video.mp4'
-import { Image, Container } from 'react-bootstrap';
+import { Image , Container } from 'react-bootstrap';
 import Slider from "react-slick";
 import car from '../src/videos/car.mp4'
 import girl from '../src/videos/girl.mp4'

@@ -71,7 +71,7 @@ const FullModel = () => {
     return (
         <>
             {values.map((v, idx) => (
-                <Button key={idx} className="me-2 mb-2 button-border" onClick={() => handleShow(v)}><i class="fa fa-play"></i>
+                <Button key={idx} className="me-2 mb-2 button-border" variant="dark" onClick={() => handleShow(v)}><i class="fa fa-play"></i>
                     
                     {typeof v === 'string' && `below ${v.split('-')[0]}`}
                 </Button>
