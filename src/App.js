@@ -38,10 +38,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import ClickModel from './ClickModel';
 import ClassToFunction from './ClassToFunction';
 import React from 'react';
-import CustomArrows from './SampleNextArrow';
+// import CustomArrows from './SampleNextArrow';
 // import SsimpleSlider from './SsimpleSlider';
 // import AppendDots from './AppendDots';
-import FullModel from './FullModel';
+// import FullModel from './FullModel';
 import FinalModal from './FinalModal';
 // import SampleNextArrow from './SampleNextArrow';
 
@@ -99,7 +99,7 @@ function App() {
       {/* <BootModel /> */}
       {/* <Example /><br /> */} 
       {/* <ClickModel /> */}
-      {/* <ClassToFunction /> */}
+      <ClassToFunction />
       {/* <FullModel/> */}
       <FinalModal />
       {/* <AppendDots /> */}

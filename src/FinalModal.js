@@ -45,6 +45,7 @@ const FinalModal = () => {
   const clickModal = {
     // height: "54rem",
     width: "100%",
+    height: "100%",
   };
 
   return (
@@ -70,16 +71,18 @@ const FinalModal = () => {
       >
         {/* <div className='' > */}
 
-        <Modal.Body closeButton className="modal-class">    
+        <Modal.Body closeButton className="modal-class">
           <Slider {...settings}>
             <div className="position-relative">
               <Card className="modal-background-color">
                 {/* <div className='modalvideo'> */}
                 {/* <Modal.Header className='text-primary' closeButton> </Modal.Header> */}
-                {/* <CloseButton  className='closedbutton'/> */}    
+                {/* <CloseButton  className='closedbutton'/> */}
                 <div className="card-header">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  <p className="txt ">Mini Toy Cars - Mini Hummer | Mini Ferrari | ... </p>
+                  <p className="txt ">
+                    Mini Toy Cars - Mini Hummer | Mini Ferrari | ...{" "}
+                  </p>
                   <i class="fas fa-volume-mute"></i>
                 </div>
                 <video
@@ -139,36 +142,42 @@ const FinalModal = () => {
                 </Card.Body>
               </Card>
             </div>
-
-            {/* <div className="modalvideo">
-               <Modal.Header className='text-primary' closeButton> </Modal.Header> 
-               <CloseButton  className='closedbutton'/> 
-              <video
-                className=" slider-video vidio"
-                src={car}
-                loop
-                autoPlay
-                mute
-                loading="lazy"
-                style={clickModal}
-              ></video>
-
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-              <h4>Mini BMW Convertible </h4>
-              <i class="fas fa-volume-mute"></i>
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-              <i class="fa fa-question-circle" aria-hidden="true"></i>
-              <div>
-                <Image className="modalimage" src="/images/redcar.jpg" />
-                <p className="">
+            <div className="position-relative">
+              <Card className="modal-background-color">
+                {/* <Modal.Header className="text-primary" closeButton>
                   {" "}
-                  <b>
-                    Mini BMW Sedan <br />₹ 599
-                  </b>
-                </p>
-              </div>
-            </div> */}
+                </Modal.Header>
+                <CloseButton className="closedbutton" /> */}
+                <div className="card-header">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <h4>Mini BMW Convertible </h4>
+                  <i class="fas fa-volume-mute"></i>
+                </div>
+                <video
+                  className=" slider-video vidio"
+                  src={car}
+                  loop
+                  autoPlay
+                  mute
+                  loading="lazy"
+                  style={clickModal}
+                ></video>
+                <Card.Body>
+                  <div className="d-flex">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
 
+                    <Image className="modalimage" src="/images/redcar.jpg" />
+                    <p className="">
+                      {" "}
+                      <b>
+                        Mini BMW Sedan <br />₹ 599
+                      </b>
+                    </p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
             {/* <div className="modalvideo">
                <Modal.Header className='text-primary' closeButton> </Modal.Header> 
                <CloseButton  className='closedbutton'/>

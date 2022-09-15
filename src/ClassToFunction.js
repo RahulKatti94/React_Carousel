@@ -10,7 +10,8 @@ import main from '../src/videos/main.mp4'
 import rabit from '../src/videos/rabit.mp4'
 import toy from '../src/videos/toy.mp4'
 import './carousel.css';
-import FullModel from "./FullModel";
+import FinalModal from "./FinalModal";
+
 
 
 
@@ -83,17 +84,15 @@ const ClassToFunction = () => {
                                     style={{ width: "18rem" }}></video>
                                 {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
                                 <div className="view d-inline-flex">
-                                    <div class="SSV-play-btn click">
-                                        
-                                        <label></label>
-                                    </div>
+                                    
                                     <i className="fa fa-eye  f-icon" aria-hidden="true"></i>
                                    
                                     
                                     {/* <i class="fa fa-play"></i> */}
                                     <span className="d-inline-flex">678</span>
                                     <span className="timer"> 00:25 </span>
-                                    <FullModel />
+                                    <FinalModal />
+                                    
                                 </div>
                             </Card.Body>
                             <Card.Body>
