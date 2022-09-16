@@ -331,3 +331,43 @@ const ClassToFunction = () => {
 
 export default ClassToFunction
 
+
+{/* <div className="position-relative">
+              <Card className="modal-background-color">
+
+                <div className="card-header">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+                  <p className="txt ">
+                    Mini BMW Convertible
+                   </p>
+                  <i class="fas fa-volume-mute"></i>
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+
+                <video
+                  className=" slider-video vidio"
+                  src={car}
+                  loop
+                  autoPlay
+                  mute
+                  loading="lazy"
+                  style={clickModal}
+                ></video>
+                <Card.Body>
+                  <div className="d-flex">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <div className="d-flex">
+                      <Image className="modalimage" src="/images/redcar.jpg" />
+                      <p className="">
+                        {" "}
+                        <b>
+                          Mini BMW Sedan <br />₹ 599
+                        </b>
+                      </p>
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div> */}
