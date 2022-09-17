@@ -68,18 +68,7 @@
   font-size: 18px;
 }
 
-/* .swiper-slide .SSV-play-btn label {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    border-top: 10px solid transparent;
-    border-left: 15px solid #ffff;
-    border-bottom: 10px solid transparent;
-    margin-top: 14px;
-    margin-left: 5px;
-} */
-
-.width {
+width {
   width: 15rem;
   height: 15rem;
 }
@@ -87,25 +76,16 @@
 .button-border {
   background-color: black;
   opacity: 0.7;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  text-shadow: 2px 2px #ff0000;
-
-  /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+  justify-content: center;
 }
 
-.button-border ::before {
-  background-color: transparent;
-  outline: none;
-}
-
-.button-border ::after {
-  background-color: transparent;
-  outline: none;
-  z-index: -1;
+.icon-size {
+  font-size: 30px;
 }
 
 .ello {
@@ -120,10 +100,6 @@
 .modalimage {
   height: 4rem;
   width: 4rem;
-  /* position: absolute;
-        align-items: center;
-        bottom: 5rem;
-        left: 69rem; */
 }
 .card-header {
   position: absolute;
@@ -139,7 +115,10 @@
 }
 
 .image-border {
-  border: 2px solid #684bc4;
+  /* border: 2px solid #684bc4; */
+  position: absolute;
+  left: 25rem;
+  bottom: 2rem;
 }
 
 .modal-class {
@@ -157,6 +136,7 @@
   height: 100% !important;
   position: relative;
   margin: auto;
+  border: 3px solid black !important;
 }
 
 .slick-prev {
@@ -196,15 +176,60 @@
   text-align: left;
   font-size: 19px;
 }
+
+.tag-component {
+  position: absolute;
+  z-index: 1;
+  top: 18rem;
+  left: 8rem;
+}
+
 .doticons {
   color: white;
   font-size: 22px;
+  line-height: 22px;
 }
-.icon-border{
-    height: 2.25rem;
-    width: 2.25rem;
-    border: 1px solid #000;
-    border-radius: 50%;
-    text-align: center;
-    background-color: rgba(0, 0, 0,0.5);
+
+.icon-border {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-icon {
+  color: white;
+  font-size: 16 px;
+}
+.footer-border {
+  display: flex;
+  height: 1.5rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  /* position: absolute; */
+}
+
+.modalcard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-paratag{
+    position: absolute;
+      left: 10rem;
+}
+
+.smallcard-border{
+ border: 2px solid aqua;
+
 }

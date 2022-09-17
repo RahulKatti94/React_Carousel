@@ -101,7 +101,9 @@ function App() {
       {/* <ClickModel /> */}
       <ClassToFunction />
       {/* <FullModel/> */}
-      <FinalModal />
+      <div className='position-relative'>
+      <FinalModal className = "component" />
+      </div>
       {/* <AppendDots /> */}
       {/* <SampleNextArrow /> */}
       {/* <CustomArrows /> */}    

@@ -42,7 +42,7 @@ const FinalModal = () => {
           variant="dark"
           onClick={() => handleShow(v)}
         >
-          <i className="fa fa-play"></i>
+          <i className="fa fa-play icon-size"></i>
 
           {typeof v === "string" && `below ${v.split("-")[0]}`}
         </Button>
@@ -60,14 +60,17 @@ const FinalModal = () => {
           <Slider {...settings}>
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header p-0, m-0">
-                  
+                <div className="card-header p-0 m-0">
                   <i className="fa fa-ellipsis-v " aria-hidden="true"></i>
                   <p className="txt ">
                     Mini Toy Cars - Mini Hummer | Mini Ferrari | ...
                   </p>
-                  <span className="icon-border"><i className="fas fa-volume-mute doticons"></i></span>
-                  <span className="icon-border"><i className="fa-solid fa-xmark doticons"></i></span>                
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
 
                 <video
@@ -79,10 +82,19 @@ const FinalModal = () => {
                   loading="lazy"
                   style={clickModal}
                 ></video>
-                <Card.Body>
+                <Card.Body className="modalcard">
                   <div className="d-flex">
-                    <span className="icon-border"><i className="fa fa-share-alt" aria-hidden="true"></i></span>
-                    <span className="icon-border"><i className="fa fa-question-circle" aria-hidden="true"></i></span>
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex">
                     <Image
                       className="modalimage image-border"
                       src="/images/car.jpg"
@@ -94,16 +106,17 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-      
-                <div className="card-header">
+                <div className="card-header p-0 m-0">
                   <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  <p className="txt">
-                  Mini Toy Cars - Mini Hummer | Mini Ferrari | ...
-                
-                    </p>
-                  <span className="icon_border"><i className="fas fa-volume-mute"></i></span>
-                  <span className="icon_border"><i class="fa-solid fa-circle-xmark"></i></span>
+                  <p className="txt">Wooden Christmas Toys</p>
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
+
                 <video
                   className=" slider-video vidio"
                   src={main}
@@ -113,26 +126,30 @@ const FinalModal = () => {
                   loading="lazy"
                   style={clickModal}
                 ></video>
-                <Card.Body>
+                <Card.Body className="modalcard">
                   <div className="d-flex">
-                    <span><i className="fa fa-share-alt" aria-hidden="true"></i></span>
-                    <span><i className="fa fa-question-circle" aria-hidden="true"></i></span>
-                    
-                    
-                    </div>
-                    <div className="d-flex">
-                      <Image
-                        className="modalimage d-inline-flex"
-                        src="/images/woden.jpg"
-                      />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Wooden Christma... <br />₹ 999
-                        </b>{" "}
-                        ₹1̶9̶9̶{" "}
-                      </p>
-                   
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex smallcard-border">
+                    <Image
+                      className="modalimage image-border"
+                      src="/images/woden.jpg"
+                    />
+                    <p className="modal-paratag">
+                      {" "}
+                      <b>
+                        Wooden Christma... <br />₹ 999
+                      </b>{" "}
+                      ₹1̶9̶9̶{" "}
+                    </p>
                   </div>
                 </Card.Body>
               </Card>
@@ -140,14 +157,16 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header">
+                <div className="card-header p-0 m-0">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
 
-                  <p className="txt ">
-                    Mini BMW Convertible
-                    </p>
-                  <i class="fas fa-volume-mute"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
+                  <p className="txt ">Mini BMW Convertible</p>
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
 
                 <video
@@ -159,20 +178,29 @@ const FinalModal = () => {
                   loading="lazy"
                   style={clickModal}
                 ></video>
-                <Card.Body>
+                <Card.Body className="modalcard">
                   <div className="d-flex">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    </div>
-                    <div className="d-flex">
-                      <Image className="modalimage" src="/images/redcar.jpg" />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Mini BMW Sedan <br />₹ 599
-                        </b>
-                      </p>
-                   
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex">
+                    <Image
+                      className="modalimage image-border"
+                      src="/images/redcar.jpg"
+                    />
+                    <p className="">
+                      {" "}
+                      <b>
+                        Mini BMW Sedan <br />₹ 599
+                      </b>
+                    </p>
                   </div>
                 </Card.Body>
               </Card>
@@ -180,13 +208,15 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header">
+                <div className="card-header p-0 m-0">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  <p className="txt">
-                    Little Rabbit 
-                    </p>
-                  <i class="fas fa-volume-mute"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
+                  <p className="txt">Little Rabbit</p>
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
                 <video
                   className=" slider-video vidio"
@@ -198,20 +228,29 @@ const FinalModal = () => {
                   style={clickModal}
                 ></video>
 
-                <Card.Body>
+                <Card.Body className="modalcard">
                   <div className="d-flex">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    </div>
-                    <div className="d-flex">
-                      <Image className="modalimage" src="/images/Rrabbit.jpg" />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Little Rabbit <br />₹ 599
-                        </b>
-                      </p>
-                   
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex">
+                    <Image
+                      className="modalimage image-border"
+                      src="/images/Rrabbit.jpg"
+                    />
+                    <p className="">
+                      {" "}
+                      <b>
+                        Little Rabbit <br />₹ 599
+                      </b>
+                    </p>
                   </div>
                 </Card.Body>
               </Card>
@@ -219,13 +258,15 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header">
+                <div className="card-header p-0 m-0">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  <p className="txt">
-                    Doll House
-                     </p>
-                  <i class="fas fa-volume-mute"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
+                  <p className="txt">Doll House</p>
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
                 <video
                   className=" slider-video vidio"
@@ -237,20 +278,29 @@ const FinalModal = () => {
                   style={clickModal}
                 ></video>
 
-                <Card.Body>
+                <Card.Body className="modalcard">
                   <div className="d-flex">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    </div>
-                    <div className="d-flex">
-                      <Image className="modalimage" src="/images/doll.jpg" />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Doll House <br />₹ 899
-                        </b>
-                      </p>
-                    
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex">
+                    <Image
+                      className="modalimage image-border"
+                      src="/images/doll.jpg"
+                    />
+                    <p className="">
+                      {" "}
+                      <b>
+                        Doll House <br />₹ 899
+                      </b>
+                    </p>
                   </div>
                 </Card.Body>
               </Card>
@@ -258,13 +308,15 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header">
+                <div className="card-header p-0 m-0">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  <p className="txt">
-                    Cute Bunny
-                    </p>
-                  <i class="fas fa-volume-mute"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
+                  <p className="txt">Cute Bunny</p>
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
                 <video
                   className=" slider-video vidio"
@@ -275,20 +327,29 @@ const FinalModal = () => {
                   loading="lazy"
                   style={clickModal}
                 ></video>
-                <Card.Body>
+                <Card.Body className="modalcard">
                   <div className="d-flex">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    </div>
-                    <div className="d-flex">
-                      <Image className="modalimage" src="/images/bunny.jpg" />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Cute Bunny <br />₹ 699
-                        </b>
-                      </p>
-                    
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex">
+                    <Image
+                      className="modalimage image-border"
+                      src="/images/bunny.jpg"
+                    />
+                    <p className="">
+                      {" "}
+                      <b>
+                        Cute Bunny <br />₹ 699
+                      </b>
+                    </p>
                   </div>
                 </Card.Body>
               </Card>
@@ -296,13 +357,16 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header">
+                <div className="card-header p-0 m-0">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                   <p className="txt">Brown Teddy </p>
-                  <i class="fas fa-volume-mute"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
+                  <span className="icon-border">
+                    <i className="fas fa-volume-mute doticons"></i>
+                  </span>
+                  <span className="icon-border">
+                    <i className="fa-solid fa-xmark doticons"></i>
+                  </span>
                 </div>
-
                 <video
                   className=" slider-video vidio"
                   src={girl}
@@ -312,20 +376,29 @@ const FinalModal = () => {
                   loading="lazy"
                   style={clickModal}
                 ></video>
-                <Card.Body>
+                <Card.Body className="">
                   <div className="d-flex">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    </div>
-                    <div className="d-flex">
-                      <Image className="modalimage" src="/images/teddy.jpg" />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Brown Teddy <br />₹ 999
-                        </b>
-                      </p>
-                    
+                    <span className="footer-border me-2">
+                      <i
+                        className="fa fa-share-alt footer-icon "
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span className="footer-border">
+                      <i className="fa-regular fa-circle-question footer-icon"></i>
+                    </span>
+                  </div>
+                  <div className="d-flex">
+                    <Image
+                      className="modalimage image-border"
+                      src="/images/teddy.jpg"
+                    />
+                    <p className="">
+                      {" "}
+                      <b>
+                        Brown Teddy <br />₹ 999
+                      </b>
+                    </p>
                   </div>
                 </Card.Body>
               </Card>

@@ -65,15 +65,19 @@ const ClassToFunction = () => {
     }
     return (
         <div><br /><br /><br /><br />
+       
             <Container>
+                
+                 
                 <Slider className="slide" {...settings}>
-
-                    <div className="swiper-slide">
+                
+                    <div className="swiper-slide position-relatives">
+                   <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
                             <Card.Body className="p-0">
-
+                            
                                 <video
                                     className=" slider-video vidio"   
                                     src={video}
@@ -82,6 +86,7 @@ const ClassToFunction = () => {
                                     mute
                                     loading="lazy"
                                     style={{ width: "18rem" }}></video>
+                                   
                                 {/* <Image className="d-inline-flex view" src="/images/eye.png" /> */}
                                 <div className="view d-inline-flex">
                                     
@@ -91,17 +96,19 @@ const ClassToFunction = () => {
                                     {/* <i class="fa fa-play"></i> */}
                                     <span className="d-inline-flex">678</span>
                                     <span className="timer"> 00:25 </span>
-                                    <FinalModal />
+                                    
+                                   
                                     
                                 </div>
                             </Card.Body>
                             <Card.Body>
+                           
                                 <div className="vidio">
                                     <span> <Image className="imagesmall" src="/images/car.jpg" /> </span>
-
-                                    <h5 className="text-center pt-4 font"> <b>Mini Beetle</b></h5>
+                                                                        <h5 className="text-center pt-4 font"> <b>Mini Beetle</b></h5>
                                     <p className="text-center pt-5 font"> <b>₹  549</b></p>
                                     <ProgressBar className="mr-3" now='40' style={pbar} variant="secondary" />
+                                    
 
 
                                 </div>
@@ -112,7 +119,8 @@ const ClassToFunction = () => {
 
 
 
-                    <div>
+                    <div className=" swiper-slide position-relatives">
+                    <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
@@ -152,7 +160,8 @@ const ClassToFunction = () => {
                     </div>
 
 
-                    <div>
+                    <div className=" swiper-slide position-relatives">
+                    <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
@@ -182,7 +191,8 @@ const ClassToFunction = () => {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div>
+                    <div className=" swiper-slide position-relatives">
+                    <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
@@ -211,7 +221,8 @@ const ClassToFunction = () => {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div>
+                    <div className=" swiper-slide position-relatives">
+                    <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
@@ -242,7 +253,8 @@ const ClassToFunction = () => {
                         </Card>
 
                     </div>
-                    <div>
+                    <div className=" swiper-slide position-relatives">
+                    <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
@@ -272,7 +284,8 @@ const ClassToFunction = () => {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div>
+                    <div className=" swiper-slide position-relatives">
+                    <p className="tag-component"> <FinalModal/></p>
                         <Card
                             style={{ width: '18rem' }}
                         >
@@ -332,42 +345,3 @@ const ClassToFunction = () => {
 export default ClassToFunction
 
 
-{/* <div className="position-relative">
-              <Card className="modal-background-color">
-
-                <div className="card-header">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-
-                  <p className="txt ">
-                    Mini BMW Convertible
-                   </p>
-                  <i class="fas fa-volume-mute"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
-                </div>
-
-                <video
-                  className=" slider-video vidio"
-                  src={car}
-                  loop
-                  autoPlay
-                  mute
-                  loading="lazy"
-                  style={clickModal}
-                ></video>
-                <Card.Body>
-                  <div className="d-flex">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    <div className="d-flex">
-                      <Image className="modalimage" src="/images/redcar.jpg" />
-                      <p className="">
-                        {" "}
-                        <b>
-                          Mini BMW Sedan <br />₹ 599
-                        </b>
-                      </p>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </div> */}

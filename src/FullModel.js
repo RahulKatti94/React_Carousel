@@ -352,3 +352,53 @@ export default FullModel
 
 
 
+<div className ="position-relative">
+<Card className="modal-background-color">
+  <div className="card-header p-0, m-0">
+    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+    <p className="txt ">Mini BMW Convertible</p>
+    <span className="icon-border">
+      <i className="fas fa-volume-mute doticons"></i>
+    </span>
+    <span className="icon-border">
+      <i className="fa-solid fa-xmark doticons"></i>
+    </span>
+  </div>
+
+  <video
+    className=" slider-video vidio"
+    src={car}
+    loop
+    autoPlay
+    mute
+    loading="lazy"
+    style={clickModal}
+  ></video>
+  <Card.Body className="modalcard">
+    <div className="d-flex">
+      <span className="footer-border me-2">
+        <i
+          className="fa fa-share-alt footer-icon "
+          aria-hidden="true"
+        ></i>
+      </span>
+      <span className="footer-border">
+        <i className="fa-regular fa-circle-question footer-icon"></i>
+      </span>
+    </div>
+    <div className="d-flex">
+      <Image
+        className="modalimage image-border"
+        src="/images/redcar.jpg"
+      />
+      <p className="">
+        {" "}
+        <b>
+          Mini BMW Sedan <br />₹ 599
+        </b>
+      </p>
+    </div>
+  </Card.Body>
+</Card>
+</div>
