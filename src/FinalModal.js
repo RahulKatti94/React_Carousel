@@ -26,6 +26,7 @@ const FinalModal = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centered: true,
+    arrows : false
   };
   const clickModal = {
     width: "100%",
@@ -48,7 +49,7 @@ const FinalModal = () => {
       ))}
 
       <Modal
-        className="cross-button"
+        className="cross-button h-100"
         show={show}
         fullscreen={fullscreen}
         onHide={() => setShow(false)}
@@ -58,8 +59,8 @@ const FinalModal = () => {
         <Modal.Body closeButton className="modal-class">
           <Slider {...settings}>
             <div className="position-relative">
-              <Card className="modal-background-color">
-                <div className="card-header p-0 m-0">
+              <Card className="modal-background-color card">
+                <div className="card-header">
                   <i className="fa fa-ellipsis-v " aria-hidden="true"></i>
                   <p className="txt ">
                     Mini Toy Cars - Mini Hummer | Mini Ferrari | ...
@@ -105,7 +106,7 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header p-0 m-0">
+                <div className="card-header">
                   <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
                   <p className="txt">Wooden Christmas Toys</p>
                   <span className="icon-border">
@@ -137,18 +138,18 @@ const FinalModal = () => {
                       <i className="fa-regular fa-circle-question footer-icon"></i>
                     </span>
                   </div>
+
                   <div className="d-flex smallcard-border">
-                    <Image
-                      className="modalimage image-border"
-                      src="/images/woden.jpg"
-                    />
-                    <p className="modal-paratag">
-                      {" "}
-                      <b>
-                        Wooden Christma... <br />₹ 999
-                      </b>{" "}
-                      ₹1̶9̶9̶{" "}
-                    </p>
+                    <Card className="image-text flex-row">
+                      <Image className="modalimage" src="/images/woden.jpg" />
+                      <p className="">
+                        {" "}
+                        <b>
+                          Wooden Christma... <br />₹99 <nbsp /> 
+                        </b>
+                        ₹1̶9̶9̶
+                      </p>{" "}
+                    </Card>
                   </div>
                 </Card.Body>
               </Card>
@@ -156,7 +157,7 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header p-0 m-0">
+                <div className="card-header">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
 
                   <p className="txt ">Mini BMW Convertible</p>
@@ -189,17 +190,16 @@ const FinalModal = () => {
                       <i className="fa-regular fa-circle-question footer-icon"></i>
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <Image
-                      className="modalimage image-border"
-                      src="/images/redcar.jpg"
-                    />
-                    <p className="">
-                      {" "}
-                      <b>
-                        Mini BMW Sedan <br />₹ 599
-                      </b>
-                    </p>
+                  <div className="d-flex smallcard-border">
+                    <Card className="image-text flex-row">
+                      <Image className="modalimage" src="/images/redcar.jpg" />
+                      <p className="">
+                        {" "}
+                        <b>
+                          Mini BMW Sedan <br />₹ 599
+                        </b>
+                      </p>
+                    </Card>
                   </div>
                 </Card.Body>
               </Card>
@@ -207,7 +207,7 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header p-0 m-0">
+                <div className="card-header">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                   <p className="txt">Little Rabbit</p>
                   <span className="icon-border">
@@ -239,17 +239,16 @@ const FinalModal = () => {
                       <i className="fa-regular fa-circle-question footer-icon"></i>
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <Image
-                      className="modalimage image-border"
-                      src="/images/Rrabbit.jpg"
-                    />
-                    <p className="">
-                      {" "}
-                      <b>
-                        Little Rabbit <br />₹ 599
-                      </b>
-                    </p>
+                  <div className="d-flex smallcard-border">
+                    <Card className="image-text flex-row">
+                      <Image className="modalimage" src="/images/Rrabbit.jpg" />
+                      <p className="">
+                        {" "}
+                        <b>
+                          Little Rabbit <br />₹ 599
+                        </b>
+                      </p>
+                    </Card>
                   </div>
                 </Card.Body>
               </Card>
@@ -257,7 +256,7 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header p-0 m-0">
+                <div className="card-header">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                   <p className="txt">Doll House</p>
                   <span className="icon-border">
@@ -289,17 +288,16 @@ const FinalModal = () => {
                       <i className="fa-regular fa-circle-question footer-icon"></i>
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <Image
-                      className="modalimage image-border"
-                      src="/images/doll.jpg"
-                    />
-                    <p className="">
-                      {" "}
-                      <b>
-                        Doll House <br />₹ 899
-                      </b>
-                    </p>
+                  <div className="d-flex smallcard-border">
+                    <Card className="image-text flex-row">
+                      <Image className="modalimage" src="/images/doll.jpg" />
+                      <p className="">
+                        {" "}
+                        <b>
+                          Doll House <br />₹ 899
+                        </b>
+                      </p>
+                    </Card>
                   </div>
                 </Card.Body>
               </Card>
@@ -307,7 +305,7 @@ const FinalModal = () => {
 
             <div className="position-relative">
               <Card className="modal-background-color">
-                <div className="card-header p-0 m-0">
+                <div className="card-header">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                   <p className="txt">Cute Bunny</p>
                   <span className="icon-border">
@@ -338,17 +336,16 @@ const FinalModal = () => {
                       <i className="fa-regular fa-circle-question footer-icon"></i>
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <Image
-                      className="modalimage image-border"
-                      src="/images/bunny.jpg"
-                    />
-                    <p className="">
-                      {" "}
-                      <b>
-                        Cute Bunny <br />₹ 699
-                      </b>
-                    </p>
+                  <div className="d-flex smallcard-border">
+                    <Card className="image-text flex-row">
+                      <Image className="modalimage" src="/images/bunny.jpg" />
+                      <p className="">
+                        {" "}
+                        <b>
+                          Cute Bunny <br />₹ 699
+                        </b>
+                      </p>
+                    </Card>
                   </div>
                 </Card.Body>
               </Card>
@@ -375,7 +372,7 @@ const FinalModal = () => {
                   loading="lazy"
                   style={clickModal}
                 ></video>
-                <Card.Body className="">
+                <Card.Body className="modalcard">
                   <div className="d-flex">
                     <span className="footer-border me-2">
                       <i
@@ -387,17 +384,15 @@ const FinalModal = () => {
                       <i className="fa-regular fa-circle-question footer-icon"></i>
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <Image
-                      className="modalimage image-border"
-                      src="/images/teddy.jpg"
-                    />
-                    <p className="">
-                      {" "}
-                      <b>
-                        Brown Teddy <br />₹ 999
-                      </b>
-                    </p>
+                  <div className="d-flex smallcard-border">
+                    <Card className="image-text flex-row">
+                      <Image className="modalimage" src="/images/teddy.jpg" />
+                      <p className="modal-paratag">
+                        {" "}
+                        <b>
+                          Brown Teddy <br />₹ 999</b></p>{" "}
+                      
+                    </Card>
                   </div>
                 </Card.Body>
               </Card>
