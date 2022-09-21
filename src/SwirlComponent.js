@@ -9,19 +9,19 @@ import kid from "../src/videos/kid.mp4";
 import main from "../src/videos/main.mp4";
 import rabit from "../src/videos/rabit.mp4";
 import toy from "../src/videos/toy.mp4";
-import "./carousel.css";
-import FinalModal from "./FinalModal";
+import "./swirl.css";
+import SwirlModal from "./SwirlModal";
 
-const ClassToFunction = () => {
+const SwirlComponent = () => {
   var settings = {
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 500, 
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows : true,
-    responsive: [
+    arrows: true,
+    responsive: [   
       {
         breakpoint: 1024,
         settings: {
@@ -67,7 +67,7 @@ const ClassToFunction = () => {
           <div className="swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -118,7 +118,7 @@ const ClassToFunction = () => {
           <div className=" swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -156,7 +156,7 @@ const ClassToFunction = () => {
           <div className=" swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -194,7 +194,7 @@ const ClassToFunction = () => {
           <div className=" swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -231,7 +231,7 @@ const ClassToFunction = () => {
           <div className=" swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -268,7 +268,7 @@ const ClassToFunction = () => {
           <div className=" swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -305,7 +305,7 @@ const ClassToFunction = () => {
           <div className=" swiper-slide position-relatives">
             <p className="tag-component">
               {" "}
-              <FinalModal />
+              <SwirlModal />
             </p>
             <Card style={{ width: "18rem" }}>
               <Card.Body className="p-0">
@@ -346,4 +346,4 @@ const ClassToFunction = () => {
   );
 };
 
-export default ClassToFunction;
+export default SwirlComponent;

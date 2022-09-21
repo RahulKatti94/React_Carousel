@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: transparent;
+  /* background-color: aqua; */
   font-family: halvetica calibri, futura;
   caret-color: #ff0000;
 }
@@ -103,20 +104,21 @@
 .modal-class {
   background-color: black;
   padding: 0 !important;
+  border: transparent;
+
 }
 
 .cross-button {
   height: auto;
-  border: solid black;
-}
+  border: none !important;
+  }
 
 .modal-background-color {
   width: 31rem !important;
   height: 100% !important;
   position: relative;
   margin: auto;
-
-  /* border: 3px solid black !important; */
+  background-color: black !important;
 }
 
 .slick-prev {
@@ -223,7 +225,7 @@
   height: 4rem;
   position: absolute;
   bottom: 1rem;
-  right: -2.5rem;
+  right: 1rem;
   align-items: center;
   font-size: 20px;
   border: brown;
@@ -231,9 +233,6 @@
 .image-border{
   border: 2px solid #684bc4;
   position: absolute;
-  right: -2rem;
+  right: 1rem;
   bottom: 1rem;
-}
-.card{
-  background-color: none !important;
 }

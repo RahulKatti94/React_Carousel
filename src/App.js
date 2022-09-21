@@ -1,5 +1,8 @@
-// import './App.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 // import Practice from './Practice';
 // import Navbar from './Navbar';
@@ -36,13 +39,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Example from './Example';
 // import BootModel from './BootModel'
 // import ClickModel from './ClickModel';
-import ClassToFunction from './ClassToFunction';
+// import ClassToFunction from './ClassToFunction';
 import React from 'react';
+import SwirlModal from './SwirlModal';
+import SwirlComponent from './SwirlComponent'
+import DimpleSlider from'./DimpleSlider'
 // import CustomArrows from './SampleNextArrow';
 // import SsimpleSlider from './SsimpleSlider';
 // import AppendDots from './AppendDots';
 // import FullModel from './FullModel';
-import FinalModal from './FinalModal';
+// import FinalModal from './FinalModal';
 // import SampleNextArrow from './SampleNextArrow';
 
 
@@ -99,15 +105,20 @@ function App() {
       {/* <BootModel /> */}
       {/* <Example /><br /> */} 
       {/* <ClickModel /> */}
-      <ClassToFunction />
+     
       {/* <FullModel/> */}
       {/* <div className='position-relative'> */}
-      <FinalModal />
+     
       {/* </div> */}
       {/* <AppendDots /> */}
       {/* <SampleNextArrow /> */}
       {/* <CustomArrows /> */}    
       {/* <SsimpleSlider /> */}
+        {/* <FinalModal />
+        <ClassToFunction /> */}
+        <SwirlModal / >
+         <SwirlComponent />
+         {/* <DimpleSlider /> */}
     </div>
 
   );

@@ -9,7 +9,8 @@ import kid from "../src/videos/kid.mp4";
 import main from "../src/videos/main.mp4";
 import rabit from "../src/videos/rabit.mp4";
 import toy from "../src/videos/toy.mp4";
-const FinalModal = () => {
+
+const SwirlModal = () => {
   const values = [true];
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
@@ -27,6 +28,7 @@ const FinalModal = () => {
     slidesToScroll: 1,
     centered: true,
   };
+
   const clickModal = {
     width: "100%",
     height: "100%",
@@ -53,13 +55,12 @@ const FinalModal = () => {
         fullscreen={fullscreen}
         onHide={() => setShow(false)}
       >
-
         <Modal.Body closeButton className="modal-class">
-          <Slider {...settings} className = "slider-div">
+          <Slider {...settings} className="slider-div">
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i className="fa fa-ellipsis-v " aria-hidden="true"></i>
+                  <i className="fa fa-ellipsis-v "></i>
                   <p className="txt ">
                     Mini Toy Cars - Mini Hummer | Mini Ferrari | ...
                   </p>
@@ -69,7 +70,7 @@ const FinalModal = () => {
                   <span className="icon-border">
                     <i className="fa-solid fa-xmark doticons"></i>
                   </span>
-                </div>
+            </div>
 
                 <video
                   className=" slider-video vidio"
@@ -85,7 +86,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                       
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -105,7 +106,7 @@ const FinalModal = () => {
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i className="fa fa-ellipsis-v" ></i>
                   <p className="txt">Wooden Christmas Toys</p>
                   <span className="icon-border">
                     <i className="fas fa-volume-mute doticons"></i>
@@ -129,7 +130,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                        
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -143,7 +144,8 @@ const FinalModal = () => {
                       <p className="">
                         {" "}
                         <b>
-                          Wooden Christma... <br />₹99 <nbsp /> 
+                          Wooden Christma... <br />
+                          ₹99 <nbsp />
                         </b>
                         ₹1̶9̶9̶
                       </p>{" "}
@@ -156,7 +158,7 @@ const FinalModal = () => {
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" ></i>
 
                   <p className="txt ">Mini BMW Convertible</p>
                   <span className="icon-border">
@@ -181,7 +183,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                        
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -206,7 +208,7 @@ const FinalModal = () => {
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" ></i>
                   <p className="txt">Little Rabbit</p>
                   <span className="icon-border">
                     <i className="fas fa-volume-mute doticons"></i>
@@ -230,7 +232,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                        
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -255,7 +257,7 @@ const FinalModal = () => {
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" ></i>
                   <p className="txt">Doll House</p>
                   <span className="icon-border">
                     <i className="fas fa-volume-mute doticons"></i>
@@ -279,7 +281,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                        
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -304,7 +306,7 @@ const FinalModal = () => {
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" ></i>
                   <p className="txt">Cute Bunny</p>
                   <span className="icon-border">
                     <i className="fas fa-volume-mute doticons"></i>
@@ -327,7 +329,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                        
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -352,7 +354,7 @@ const FinalModal = () => {
             <div className="position-relative">
               <Card className="modal-background-color">
                 <div className="card-header">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <i class="fa fa-ellipsis-v" ></i>
                   <p className="txt">Brown Teddy </p>
                   <span className="icon-border">
                     <i className="fas fa-volume-mute doticons"></i>
@@ -375,7 +377,7 @@ const FinalModal = () => {
                     <span className="footer-border me-2">
                       <i
                         className="fa fa-share-alt footer-icon "
-                        aria-hidden="true"
+                        
                       ></i>
                     </span>
                     <span className="footer-border">
@@ -388,8 +390,9 @@ const FinalModal = () => {
                       <p className="modal-paratag">
                         {" "}
                         <b>
-                          Brown Teddy <br />₹ 999</b></p>{" "}
-                      
+                          Brown Teddy <br />₹ 999
+                        </b>
+                      </p>{" "}
                     </Card>
                   </div>
                 </Card.Body>
@@ -401,4 +404,4 @@ const FinalModal = () => {
     </div>
   );
 };
-export default FinalModal;
+export default SwirlModal;

@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    /* background-color: aqua; */
+    font-family: halvetica calibri, futura;
+    caret-color: #ff0000;
+  }
+  
+  .view {
+    color: white;
+    height: 20px;
+    width: 4rem;
+    font-size: 14px;
+    background-color: #973443;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    align-items: center;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .imagesmall {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 5.8rem;
+  }
+  
+  .vidio {
+    position: relative;
+    border-radius: 0.375rem;
+  }
+  
+  .timer {
+    position: absolute;
+    color: white;
+    background-color: black;
+    opacity: 0.4;
+    left: 13rem;
+    height: 20px;
+    width: 2.8rem;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .font {
+    font-size: 24px;
+  }
+  
+  .imagebig {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 8.5rem;
+    left: 5.8rem;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+  }
+  .button-border {
+    background-color: black;
+    opacity: 0.7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-size {
+    font-size: 30px;
+  }
+  
+  .ello {
+    margin: 50px !important;
+    float: left !important;
+  }
+  
+  .modalimage {
+    height: 4rem;
+    width: 4rem;
+  }
+  .card-header {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .modalvideo {
+    position: relative;
+  }
+  
+  .modal-class {
+    background-color: black;
+    padding: 0 !important;
+    border: transparent;
+  
+  }
+  
+  .cross-button {
+    height: auto;
+    border: none !important;
+    }
+  
+  .modal-background-color {
+    width: 31rem !important;
+    height: 100% !important;
+    position: relative;
+    margin: auto;
+    background-color: black !important;
+  }
+  
+  .slick-prev {
+    left: 40px !important;
+    /* font-size: 100px !important; */
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    /* font-family: "slick"; */
+    font-size: 40px !important;
+  }
+  
+  .slick-prev:after,
+  .slick-next:after {
+    /* font-family: "slick"; */
+    font-size: 40px !important;
+  }
+  .slick-next {
+    right: 40px !important;
+  }
+  .slick-prev:active {
+    font-family: "slick";
+    font-size: 40px !important;
+  }
+  
+  .card-header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    height: 10%;
+    border: none;
+    background-color: transparent;
+  }
+   
+  .txt {
+    color: #fff !important;
+    height: 100px;
+    line-height: 22px;
+    width: calc(100% - 155px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tag-component {
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    left: 8rem;
+  }
+  
+  .doticons {
+    color: white;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  
+  .icon-border {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .footer-icon {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-border {
+    display: flex;
+    height: 1.5rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+  }
+  
+  .modalcard {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  
+  .image-text {
+    width: 15rem;
+    height: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    align-items: center;
+    font-size: 20px;
+    border: brown;
+  }
+  .image-border{
+    border: 2px solid #684bc4;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
