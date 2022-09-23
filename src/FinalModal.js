@@ -9,6 +9,10 @@ import kid from "../src/videos/kid.mp4";
 import main from "../src/videos/main.mp4";
 import rabit from "../src/videos/rabit.mp4";
 import toy from "../src/videos/toy.mp4";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const FinalModal = () => {
   const values = [true];
   const [fullscreen, setFullscreen] = useState(true);

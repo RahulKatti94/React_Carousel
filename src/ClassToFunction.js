@@ -11,6 +11,9 @@ import rabit from "../src/videos/rabit.mp4";
 import toy from "../src/videos/toy.mp4";
 import "./carousel.css";
 import FinalModal from "./FinalModal";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ClassToFunction = () => {
   var settings = {

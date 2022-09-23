@@ -1,8 +1,8 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "slick-carousel/slick/slick.css"; 
+import "./App.css";
+// import "./swip.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 // import Practice from './Practice';
 // import Navbar from './Navbar';
@@ -30,7 +30,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import CaroselVideo from './CaroselVideo'
 // import Short from './Short';
 // import Newfile from './Newfile';
-// import SimpleSlider from './SimpleSlider'; 
+// import SimpleSlider from './SimpleSlider';
 // import Responsive from './Responsive';
 // import Navigation from './Navigation';
 // import Layout from './Layout';
@@ -40,25 +40,27 @@ import "slick-carousel/slick/slick-theme.css";
 // import BootModel from './BootModel'
 // import ClickModel from './ClickModel';
 // import ClassToFunction from './ClassToFunction';
-import React from 'react';
-import SwirlModal from './SwirlModal';
-import SwirlComponent from './SwirlComponent'
-import DimpleSlider from'./DimpleSlider'
+import React from "react";
+// import SwirlModal from './SwirlModal';
+// import SwirlComponent from './SwirlComponent'
+// import NewSlider from "./NewSlider";
+// import DimpleSlider from'./DimpleSlider'
 // import CustomArrows from './SampleNextArrow';
 // import SsimpleSlider from './SsimpleSlider';
 // import AppendDots from './AppendDots';
 // import FullModel from './FullModel';
 // import FinalModal from './FinalModal';
 // import SampleNextArrow from './SampleNextArrow';
+// import UncontrolledExample1 from './UncontrolledExample1';
+import SwipeToSlide from "./SwipeToSlide";
+
+
 
 
 function App() {
   return (
-
     <div className="App">
-
-
-      {/* <Practice /> */}  
+      {/* <Practice /> */}
       {/* <Routes>
            <Route path = '/' index element= {<Navbar />}/>
            <Route path='/hhome' element = {<Hhome />} />
@@ -67,8 +69,6 @@ function App() {
           
 
         </Routes>  */}
-
-
 
       {/* <Navbar /> */}
       {/* <Hhome /> 
@@ -103,24 +103,26 @@ function App() {
       {/* <Responsive /> */}
       {/* <Example /> */}
       {/* <BootModel /> */}
-      {/* <Example /><br /> */} 
+      {/* <Example /><br /> */}
       {/* <ClickModel /> */}
-     
+
       {/* <FullModel/> */}
       {/* <div className='position-relative'> */}
-     
+
       {/* </div> */}
       {/* <AppendDots /> */}
       {/* <SampleNextArrow /> */}
-      {/* <CustomArrows /> */}    
+      {/* <CustomArrows /> */}
       {/* <SsimpleSlider /> */}
-        {/* <FinalModal />
-        <ClassToFunction /> */}
-        <SwirlModal / >
-         <SwirlComponent />
-         {/* <DimpleSlider /> */}
+      {/* <FinalModal /> */}
+      {/* <ClassToFunction /> */}
+       {/* <SwirlModal / > */}
+         {/* <SwirlComponent />  */}
+       {/* <DimpleSlider /> */}
+       {/* <NewSlider /> */}
+       {/* <UncontrolledExample1 /> */}
+       <SwipeToSlide />
     </div>
-
   );
 }
 

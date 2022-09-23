@@ -46,3 +46,7 @@ body{
 .margin{
   margin-top: 6rem !important;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: #000000 !important;
+}
